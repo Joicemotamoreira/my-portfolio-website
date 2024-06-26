@@ -76,3 +76,8 @@ h1 {
   font-size: 55px;
   margin: 1px;
 }
+
+.picture img {
+  box-shadow: 41px 43px 2px rgba(118, 115, 115, 0.3);
+  border: 10px solid white;
+}
