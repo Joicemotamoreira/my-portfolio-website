@@ -181,6 +181,127 @@ h1 {
   margin-top: 0;
 }
 
+.projects {
+  padding-top: 30px;
+}
+.projectsTitle {
+  background-color: rgb(193, 193, 245, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 80px;
+  padding: 2px 5px;
+}
+
+.projectsDescription {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(94, 94, 94);
+}
+
+.firstProject {
+  flex-direction: row;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.firstProjectPicture {
+  text-align: center;
+  background-color: rgba(193, 193, 245, 0.165);
+  padding: 30px;
+  width: 50%;
+  align-items: center;
+}
+.firstProject img {
+  width: 350px;
+  transition: all 300ms ease-in-out;
+  border-radius: 10px;
+}
+.firstProjectDescription {
+  padding: 30px;
+  width: 50%;
+}
+
+.firstProject img:hover {
+  scale: 1.1;
+}
+
+.firstProjectTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(17, 24, 39);
+}
+
+.secondProject {
+  flex-direction: row;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.secondProjectPicture {
+  text-align: center;
+  background-color: rgba(193, 193, 245, 0.165);
+  padding: 30px;
+  width: 50%;
+  align-items: center;
+}
+.secondProject img {
+  width: 350px;
+  transition: all 300ms ease-in-out;
+  border-radius: 10px;
+}
+.secondProjectDescription {
+  padding: 30px;
+  width: 50%;
+}
+
+.secondProject img:hover {
+  scale: 1.1;
+}
+
+.secondProjectTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(17, 24, 39);
+}
+
+.thirdProject {
+  flex-direction: row;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.thirdProjectPicture {
+  text-align: center;
+  background-color: rgba(193, 193, 245, 0.165);
+  padding: 30px;
+  width: 50%;
+  align-items: center;
+}
+.thirdProject img {
+  width: 350px;
+  transition: all 300ms ease-in-out;
+  border-radius: 10px;
+}
+.thirdProjectDescription {
+  padding: 30px;
+  width: 50%;
+}
+
+.thirdProject img:hover {
+  scale: 1.1;
+}
+
+.thirdProjectTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(17, 24, 39);
+}
 footer {
   text-align: center;
   padding: 20px;
