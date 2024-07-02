@@ -120,10 +120,43 @@ h1 {
 .material-symbols-outlined {
   color: #8a2be2;
 }
+.contactIcons {
+  align-items: center;
+}
+
 .picture img {
   box-shadow: 26px 33px rgba(192, 192, 245, 1);
   border: 10px solid white;
   margin-right: 60px;
+}
+
+.skills p {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(94, 94, 94);
+}
+.skillsTitle {
+  background-color: rgb(193, 193, 245, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 60px;
+  padding: 2px 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+.grid img {
+  max-width: 100%;
 }
 
 footer {
