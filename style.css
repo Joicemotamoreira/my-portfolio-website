@@ -77,7 +77,9 @@ ul {
   padding: 15px;
   color: rgb(94, 94, 94);
 }
-
+.aboutDescription {
+  width: 500px;
+}
 h1 {
   font-size: 55px;
   margin: 1px;
@@ -203,35 +205,41 @@ h1 {
   color: rgb(94, 94, 94);
 }
 
-.firstProject {
+.firstProject,
+.thirdProject {
   flex-direction: row;
   display: flex;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.firstProjectPicture {
+.firstProjectPicture,
+.thirdProjectPicture {
   text-align: center;
   background-color: rgba(193, 193, 245, 0.165);
   padding: 30px;
   width: 50%;
   align-items: center;
 }
-.firstProject img {
+.firstProject img,
+.thirdProject img {
   width: 350px;
   transition: all 300ms ease-in-out;
   border-radius: 10px;
 }
-.firstProjectDescription {
+.firstProjectDescription,
+.thirdProjectDescription {
   padding: 30px;
   width: 50%;
 }
 
-.firstProject img:hover {
+.firstProject img:hover,
+.thirdProject img:hover {
   scale: 1.1;
 }
 
-.firstProjectTitle {
+.firstProjectTitle,
+.thirdProjectTitle {
   font-size: 16px;
   font-weight: bold;
   color: rgb(17, 24, 39);
@@ -266,40 +274,6 @@ h1 {
 }
 
 .secondProjectTitle {
-  font-size: 16px;
-  font-weight: bold;
-  color: rgb(17, 24, 39);
-}
-
-.thirdProject {
-  flex-direction: row;
-  display: flex;
-  border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.thirdProjectPicture {
-  text-align: center;
-  background-color: rgba(193, 193, 245, 0.165);
-  padding: 30px;
-  width: 50%;
-  align-items: center;
-}
-.thirdProject img {
-  width: 350px;
-  transition: all 300ms ease-in-out;
-  border-radius: 10px;
-}
-.thirdProjectDescription {
-  padding: 30px;
-  width: 50%;
-}
-
-.thirdProject img:hover {
-  scale: 1.1;
-}
-
-.thirdProjectTitle {
   font-size: 16px;
   font-weight: bold;
   color: rgb(17, 24, 39);
