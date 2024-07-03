@@ -332,10 +332,34 @@ h1 {
   padding: 20px;
   color: rgb(94, 94, 94);
 }
-.contactDetails {
+.contactDetails,
+.contactDetails input {
   text-align: center;
-  font-size: 35px;
+  font-size: 28px;
   color: rgb(68, 68, 68);
+}
+
+.contactDetails input {
+  border: none;
+  width: 230px;
+  position: relative;
+  left: -10px;
+  top: -6px;
+}
+.emailInput {
+  width: 358px !important;
+}
+
+.emailIcon,
+.phoneIcon,
+.copyIcon {
+  font-size: 30px;
+}
+
+.copyIcon {
+  color: rgb(193, 193, 245);
+  position: relative;
+  left: -18px;
 }
 .moreContactDetails {
   text-align: center;
