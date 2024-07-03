@@ -75,6 +75,8 @@ ul {
   justify-content: space-between;
   margin: 30px 5px;
   padding: 15px;
+  padding-top: 80px;
+  padding-bottom: 40px;
   color: rgb(94, 94, 94);
 }
 .aboutDescription {
@@ -137,7 +139,7 @@ h1 {
 .skills {
   border-bottom: 1px solid lightgray;
   border-top: 1px solid lightgray;
-  padding-top: 30px;
+  padding-top: 80px;
 }
 .skills p {
   text-align: center;
@@ -163,7 +165,7 @@ h1 {
   text-align: center;
   margin: auto;
   margin-top: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .grid div {
@@ -186,7 +188,7 @@ h1 {
 }
 
 .projects {
-  padding-top: 30px;
+  padding-top: 80px;
 }
 .projectsTitle {
   background-color: rgb(193, 193, 245, 0.5);
@@ -281,7 +283,7 @@ h1 {
 
 .getInTouch {
   border-top: 1px solid lightgray;
-  padding: 30px;
+  padding: 80px;
 }
 .getInTouchTitle {
   background-color: rgb(193, 193, 245, 0.5);
@@ -302,7 +304,7 @@ h1 {
 }
 .contactDetails {
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   color: rgb(68, 68, 68);
 }
 .moreContactDetails {

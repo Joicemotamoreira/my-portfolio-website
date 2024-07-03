@@ -16,25 +16,27 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>My Portfolio Website</title>
+    <title>Joice | Web Developer</title>
   </head>
   <body>
     <div class="wraper">
       <div class="menu">
-        <span class="material-symbols-outlined"> home </span>
+        <a href="/" target="_self"
+          ><span class="material-symbols-outlined" id="home"> home </span></a
+        >
         <div>
           <ul class="menuLinks">
-            <li><a href="">About</a></li>
-            <li><a href="">Projects </a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#about" target="_self">About</a></li>
+            <li><a href="#project" target="_self">Projects </a></li>
+            <li><a href="#contact" target="_self">Contact</a></li>
             <li>
-              <strong><a href="">Download CV </a></strong>
+              <strong><a href="">Download CV</a></strong>
             </li>
           </ul>
         </div>
       </div>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="aboutDescription">
           <h1>Hi, I'm Joice <span class="waving">👋</span></h1>
           <p class="poppins-light aboutMe">
@@ -175,23 +177,32 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section class="projects" id="project">
         <div class="projectsTitle">Projects</div>
         <p class="projectsDescription">Some of the projects I have built:</p>
 
         <div class="firstProject">
           <div class="firstProjectPicture">
-            <a href="">
+            <a
+              href="https://recipe-generator-by-joice.netlify.app/"
+              target="_blank"
+            >
               <img src="images/project1.png" alt="" />
             </a>
           </div>
           <div class="firstProjectDescription">
             <p class="firstProjectTitle">Sandwich Recipe Generator</p>
-            <p>Description</p>
+            <p>
+              Welcome to my Sandwich Recipe Generator, a user-friendly platform
+              designed to help you create delicious and customized sandwich
+              recipes effortlessly. Whether you're a sandwich enthusiast or just
+              looking for a quick meal idea, our generator is here to inspire
+              you with a variety of options tailored to your taste preferences.
+            </p>
             <div>
-              <p>Skill 1</p>
-              <p>Skill 2</p>
-              <p>Skill 3</p>
+              <p>CSS</p>
+              <p>HTML</p>
+              <p>JavaScript</p>
             </div>
           </div>
         </div>
@@ -200,15 +211,24 @@
         <div class="secondProject">
           <div class="secondProjectDescription">
             <p class="secondProjectTitle">World Clock</p>
-            <p>Description</p>
+            <p>
+              Our World Clock is a user-friendly platform built with HTML, CSS,
+              JavaScript, and API integration, focusing on user experience. By
+              default, it shows the current time in Dublin (where I live) and
+              Fortaleza (the city of my birth). Users can select different
+              cities from a dropdown menu to check real-time updates, ensuring
+              accurate time tracking worldwide. The clean, intuitive design
+              makes it easy to navigate and stay connected with global time
+              zones.
+            </p>
             <div>
-              <p>Skill 1</p>
-              <p>Skill 2</p>
-              <p>Skill 3</p>
+              <p>CSS</p>
+              <p>HTML</p>
+              <p>JavaScript</p>
             </div>
           </div>
           <div class="secondProjectPicture">
-            <a href="">
+            <a href="https://world-clock-by-joice.netlify.app/" target="_blank">
               <img src="images/project2.png" alt="" />
             </a>
           </div>
@@ -217,24 +237,32 @@
         <br />
         <div class="thirdProject">
           <div class="thirdProjectPicture">
-            <a href="">
+            <a href="https://sunrise-weather.netlify.app/" target="_blank">
               <img src="images/project3.png" alt="" />
             </a>
           </div>
           <div class="thirdProjectDescription">
             <p class="thirdProjectTitle">Weather App</p>
-            <p>Description</p>
+            <p>
+              Our Weather App is a modern platform built with HTML, CSS,
+              JavaScript, and API integration, focusing on user experience (UX).
+              It allows users to check real-time temperatures and weather
+              conditions for any city worldwide. Additionally, the app provides
+              a 5-day weather forecast, ensuring you stay informed about
+              upcoming weather changes. The intuitive design makes it easy to
+              navigate and quickly find the weather information you need.
+            </p>
             <div>
-              <p>Skill 1</p>
-              <p>Skill 2</p>
-              <p>Skill 3</p>
+              <p>CSS</p>
+              <p>HTML</p>
+              <p>JavaScript</p>
             </div>
           </div>
         </div>
       </section>
       <br />
       <br />
-      <section class="getInTouch">
+      <section class="getInTouch" id="contact">
         <div class="getInTouchTitle">Get in touch</div>
         <p>
           What's next? Feel free to reach out to me if you are looking for a
