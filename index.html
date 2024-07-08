@@ -42,17 +42,20 @@
         <div class="aboutDescription">
           <h1>Hi, I'm Joice <span class="waving">👋</span></h1>
           <p class="poppins-light aboutMe">
-            I'm a Web Developer from Brazil. I have a degree in Law and spent
-            many years as an entrepreneur. In 2022, I moved to Ireland with my
-            husband to learn English, and now, in 2024, I am ready to start my
-            career in the IT field. My interest in technology began by listening
-            to my husband talk about his professional experiences. Fascinated by
-            the collaborative and modern environment, I started studying Systems
-            Analysis and Development in Brazil. Although I paused the course to
-            focus on learning English, my passion for web development only grew.
-            Currently, I am studying HTML, CSS and JavaScript, and am eager to
-            apply my skills to innovative projects. Let’s create something
-            amazing together!
+            My interest in technology began three years ago when my husband
+            shared his work experiences with me. I was fascinated by how
+            collaborative the work environment could be, and inspired by seeing
+            women thrive in a predominantly male field. I decided to pursue a
+            degree in Systems Analysis and Development, aspiring to work in IT
+            one day. After a year, I decided to pause my studies as I moved to
+            Ireland with my husband, shifting my focus to learning English.
+            After two years in Dublin and becoming fluent in English, I decided
+            to return to my studies in web development. I began studying HTML,
+            CSS, and JavaScript daily, falling more in love with the creative
+            power of these technologies and enjoying the projects I developed.
+            Today, my greatest desire is to make web development a part of my
+            daily professional life, to learn even more, and to contribute with
+            all my enthusiasm to a technology company.
           </p>
           <br />
           <div class="location">
@@ -66,7 +69,7 @@
         </div>
 
         <div class="picture">
-          <img src="images/Joice.jpeg" alt="" width="200" />
+          <img src="images/Joice.jpeg" alt="" width="230" />
         </div>
       </section>
       <br />
@@ -306,23 +309,26 @@
               class="emailInput"
             />
 
-            <span onClick="getMail()">
-              <span class="material-symbols-outlined copyIcon">
+            <span style="position: relative" onClick="getMail()">
+              <span class="material-symbols-outlined copyIcon" id="copyMail">
                 content_copy
               </span>
+              <span id="copyMessage" style="display: none">Copied!</span>
             </span>
           </div>
-          <div>
+
+          <div style="margin-top: 10px">
             <span class="material-symbols-outlined phoneIcon">
               phone_android
             </span>
 
             <input type="text" value="+353 0876261355" id="myNumber" />
 
-            <span onClick="getNumber()">
-              <span class="material-symbols-outlined copyIcon">
+            <span style="position: relative" onClick="getNumber()">
+              <span class="material-symbols-outlined copyIcon" id="copyNumber">
                 content_copy
               </span>
+              <span id="copiedNumber" style="display: none">Copied!</span>
             </span>
           </div>
           <br />
