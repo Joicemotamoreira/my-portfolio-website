@@ -1,4 +1,4 @@
-function myFunctionMail() {
+function getMail() {
   let copyText = document.getElementById("myMail");
 
   copyText.select();
@@ -6,7 +6,7 @@ function myFunctionMail() {
   navigator.clipboard.writeText(copyText.value);
 }
 
-function myFunctionNumber() {
+function getNumber() {
   let copyText = document.getElementById("myNumber");
 
   copyText.select();
