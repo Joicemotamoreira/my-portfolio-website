@@ -354,6 +354,10 @@ h1 {
   left: -10px;
   top: -6px;
 }
+
+input:focus {
+  outline: none;
+}
 .emailInput {
   width: 358px !important;
 }
@@ -383,6 +387,10 @@ h1 {
 a {
   color: #892be2c7;
   text-decoration: none;
+}
+
+a:hover {
+  color: rgb(170, 170, 249);
 }
 .icons {
   display: flex;
