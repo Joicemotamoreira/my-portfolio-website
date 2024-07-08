@@ -70,6 +70,7 @@ ul {
 #home:hover {
   color: black;
 }
+
 .material-symbols-outlined {
   color: #8a2be2;
 }
@@ -361,25 +362,40 @@ h1 {
 .phoneIcon,
 .copyIcon {
   font-size: 30px;
+  color: rgb(170, 170, 249);
 }
 
 .copyIcon {
-  color: rgb(193, 193, 245);
   position: relative;
   left: -18px;
+  cursor: pointer;
+}
+
+.copyIcon:hover {
+  color: gray;
 }
 .moreContactDetails {
   text-align: center;
   color: rgb(94, 94, 94);
+  font-size: 18px;
 }
 
+a {
+  color: #892be2c7;
+  text-decoration: none;
+}
 .icons {
   display: flex;
   justify-content: space-around;
-  max-width: 220px;
+  max-width: 260px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+  font-size: 20px;
+}
+.github,
+.linkedin {
+  margin-left: 4px;
 }
 footer {
   text-align: center;
