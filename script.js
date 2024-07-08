@@ -10,6 +10,11 @@ function getMail() {
   } else if (document.selection) {
     document.selection.empty();
   }
+
+  copyMessage.style.display = "block";
+  setTimeout(function () {
+    copyMessage.style.display = "none";
+  }, 1500);
 }
 
 function getNumber() {
@@ -24,4 +29,9 @@ function getNumber() {
   } else if (document.selection) {
     document.selection.empty();
   }
+
+  copiedNumber.style.display = "block";
+  setTimeout(function () {
+    copiedNumber.style.display = "none";
+  }, 1500);
 }

@@ -9,7 +9,7 @@ html {
 .wraper {
   max-width: 900px;
   margin: auto;
-  padding: 40px 60px;
+  padding: 0px 60px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 3px 3px 56px rgba(239, 239, 246, 0.5);
@@ -66,6 +66,7 @@ ul {
 #home {
   transition: all 200ms ease-in-out;
   cursor: pointer;
+  margin-top: 5px;
 }
 #home:hover {
   color: black;
@@ -141,10 +142,12 @@ h1 {
   align-items: center;
 }
 
+.picture {
+  margin-right: 7px;
+}
 .picture img {
-  box-shadow: 26px 33px rgba(192, 192, 245, 1);
+  box-shadow: 26px 33px rgb(193, 193, 245, 0.5);
   border: 10px solid white;
-  margin-right: 60px;
 }
 
 .skills {
@@ -409,4 +412,30 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 14px;
+}
+
+#copyMessage {
+  background-color: rgb(193, 193, 245, 0.5);
+  color: black;
+  padding: 4px 8px;
+  max-width: 65px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  top: -29px;
+  right: -18px;
+}
+
+#copiedNumber {
+  background-color: rgb(193, 193, 245, 0.5);
+  color: black;
+  padding: 4px 8px;
+  max-width: 65px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  top: -29px;
+  right: -16px;
 }
