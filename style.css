@@ -63,14 +63,15 @@ ul {
   padding: 5px 35px;
   border-bottom: 1px solid lightgray;
 }
-
-.material-symbols-outlined {
+#home {
   transition: all 200ms ease-in-out;
   cursor: pointer;
 }
-
-.material-symbols-outlined:hover {
+#home:hover {
   color: black;
+}
+.material-symbols-outlined {
+  color: #8a2be2;
 }
 
 .about {
@@ -134,9 +135,7 @@ h1 {
   align-items: center;
   display: flex;
 }
-.material-symbols-outlined {
-  color: #8a2be2;
-}
+
 .contactIcons {
   align-items: center;
 }
