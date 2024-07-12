@@ -107,10 +107,11 @@ ul {
 }
 
 .dark .themeIcon:hover {
-  color: white;
+  color: lightgray;
 }
 .about {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin: auto;
   padding: 15px;
@@ -126,6 +127,7 @@ ul {
 .aboutDescription {
   width: 850px;
   text-align: left;
+  flex: 1;
 }
 
 h1 {
@@ -230,11 +232,9 @@ h1 {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-gap: 45px;
-  max-width: 50%;
+  max-width: 1250px;
   text-align: center;
-  margin: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 60px auto;
 }
 
 .grid div {
@@ -263,7 +263,7 @@ h1 {
 
 .projects {
   padding-top: 80px;
-  max-width: 60%;
+  max-width: 900px;
   justify-content: center;
   margin: auto;
 }
@@ -310,7 +310,7 @@ h1 {
   text-align: center;
   background-color: rgba(193, 193, 245, 0.165);
   padding: 30px;
-  width: 50%;
+  width: 475px;
   align-items: center;
 }
 
@@ -582,4 +582,124 @@ footer a {
 }
 .dark {
   background-color: #030712;
+}
+
+@media screen and (max-width: 1371px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+    margin: 60px 120px;
+    row-gap: 40px;
+    column-gap: 0px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .picture {
+    order: -1;
+  }
+  .aboutDescription {
+    margin-top: 50px;
+    max-width: fit-content;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  .firstProject,
+  .thirdProject,
+  .secondProject,
+  .fourthProject {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 100px;
+  }
+  .firstProjectPicture,
+  .thirdProjectPicture,
+  .secondProjectPicture,
+  .fourthProjectPicture {
+    width: 100%;
+    order: -1;
+    padding: 30px 0px;
+  }
+  .firstProjectDescription,
+  .thirdProjectDescription,
+  .secondProjectDescription,
+  .fourthProjectDescription {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 60px;
+  }
+}
+
+@media screen and (max-width: 634px) {
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  ul {
+    margin-left: 0px;
+  }
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 350px;
+  }
+  .firstProject,
+  .thirdProject,
+  .secondProject,
+  .fourthProject {
+    margin: 20px 50px;
+  }
+  .getInTouch {
+    padding: 80px 10px;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 350px;
+  }
+  .firstProject,
+  .thirdProject,
+  .secondProject,
+  .fourthProject {
+    margin: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+}
+
+@media screen and (max-width: 480px) {
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 300px;
+  }
 }
