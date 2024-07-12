@@ -35,3 +35,18 @@ function getNumber() {
     copiedNumber.style.display = "none";
   }, 1500);
 }
+
+function changeTheme() {
+  let body = document.querySelector("body");
+
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark");
+    themeButton.innerHTML = "dark_mode";
+  } else {
+    body.classList.add("dark");
+    themeButton.innerHTML = "light_mode";
+  }
+}
+
+let themeButton = document.querySelector("#changeThemeIcon");
+themeButton.addEventListener("click", changeTheme);
