@@ -593,7 +593,7 @@ footer a {
   cursor: pointer;
 }
 .newMenu {
-  display: flex;
+  display: none;
   background-color: white;
   margin-right: 0px;
   justify-content: flex-end;
