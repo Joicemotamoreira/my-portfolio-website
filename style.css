@@ -31,13 +31,13 @@ header {
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  z-index: 1000;
+  z-index: 999;
 }
 .dark header {
   background-color: rgba(3, 7, 18, 0.5);
 }
 
-ul {
+.menuLinks {
   list-style: none;
   display: flex;
   gap: 16px;
@@ -68,7 +68,7 @@ ul {
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  color: blueviolet;
+  color: #8a2be2;
   padding: 5px 35px;
   max-width: 1200px;
   margin: auto;
@@ -584,6 +584,74 @@ footer a {
   background-color: #030712;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.newMenu {
+  display: flex;
+  background-color: white;
+  margin-right: 0px;
+  justify-content: flex-end;
+  color: #551a8b;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 5900px;
+  width: 100%;
+}
+
+.newMenuLinks {
+  list-style: none;
+  text-align: left;
+  width: 200px;
+  margin: 0px;
+  padding-right: 10px;
+  line-height: 50px;
+  background-color: white;
+  border-left: 1px solid rgba(211, 211, 211, 0.355);
+}
+
+.newMenuLinks a {
+  text-decoration: none;
+  color: #551a8b;
+}
+
+.downloadButton {
+  text-align: center;
+  padding: 5px 50px;
+  border-radius: 10px;
+  border: 1px solid #551a8b;
+  background-color: #551a8b;
+  width: 100%;
+}
+.downloadButton a {
+  color: white;
+  font-size: 14px;
+  font-family: Poppins;
+}
+
+.centerButton {
+  text-align: center;
+}
+.spaceBetween {
+  justify-content: space-between;
+  display: flex;
+}
+
+hr {
+  border-color: rgba(211, 211, 211, 0.137);
+}
+
 @media screen and (max-width: 1371px) {
   .grid {
     grid-template-columns: repeat(5, 1fr);
@@ -657,7 +725,7 @@ footer a {
 }
 
 @media screen and (max-width: 625px) {
-  ul {
+  .menuLinks {
     margin-left: 0px;
   }
   .firstProject img,
@@ -689,6 +757,17 @@ footer a {
   .secondProject,
   .fourthProject {
     margin: 20px 50px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .newMenu.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
   }
 }
 

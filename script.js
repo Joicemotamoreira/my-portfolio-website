@@ -50,3 +50,8 @@ function changeTheme() {
 
 let themeButton = document.querySelector("#changeThemeIcon");
 themeButton.addEventListener("click", changeTheme);
+
+function toggleMenu() {
+  let newMenu = document.querySelector(".newMenu");
+  newMenu.classList.toggle("active");
+}

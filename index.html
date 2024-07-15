@@ -21,6 +21,7 @@
   <body>
     <header>
     <div>
+       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
       <div class="menu">
         <a href="/" target="_self"
           ><span class="material-symbols-outlined" id="home"> home </span></a
@@ -451,6 +452,24 @@
         >GitHub</a
       >.
     </footer>
+
+    <section class="newMenu">
+      <ul class="newMenuLinks">
+        <div class="spaceBetween">
+        <a href="/" target="_self"><span class="material-symbols-outlined" id="home"> home </span></a>
+        <a><span class="material-symbols-outlined"> close </span></a>
+        </div>
+        <hr>
+        <li><a href="#about" target="_self">About</a></li>
+        <li><a href="#project" target="_self">Projects </a></li>
+        <li><a href="#contact" target="_self">Contact</a></li>
+        <hr>
+        <div class="spaceBetween"> Switch Theme
+        <li>  <span id="changeThemeIcon" class="material-symbols-outlined themeIcon"> dark_mode </span> </li>
+        </div>
+        <li class="centerButton"> <button class="downloadButton"><a href="/cv-joice.pdf" target="_blank">Download CV</a></button></li>
+      </ul>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
