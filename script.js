@@ -46,12 +46,21 @@ function changeTheme() {
     body.classList.add("dark");
     themeButton.innerHTML = "light_mode";
   }
+  closeNewMenu();
 }
 
 let themeButton = document.querySelector("#changeThemeIcon");
 themeButton.addEventListener("click", changeTheme);
+let themeButton2 = document.querySelector("#changeThemeIcon2");
+themeButton2.addEventListener("click", changeTheme);
 
 function toggleMenu() {
   let newMenu = document.querySelector(".newMenu");
   newMenu.classList.toggle("active");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function closeNewMenu() {
+  let newMenu = document.querySelector(".newMenu");
+  newMenu.classList.remove("active");
 }
