@@ -686,23 +686,23 @@ footer a {
 .downloadButton {
   text-align: center;
   padding: 5px 50px;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px solid #551a8b;
   background-color: #551a8b;
-  width: 100%;
+  color: white !important;
+  font-size: 14px;
+  font-family: Poppins;
+  transition: all 200ms ease-in-out;
 }
-
+.downloadButton:hover {
+  background-color: white;
+  border: 1px solid #551a8b;
+  color: #551a8b !important;
+}
 .dark .downloadButton {
   background-color: white;
   border: 1px solid white;
-}
-.downloadButton a {
-  color: white;
-  font-size: 14px;
-  font-family: Poppins;
-}
-.dark .downloadButton a {
-  color: #030712;
+  color: #030712 !important;
 }
 
 .dark .downloadButton:hover {
@@ -710,9 +710,6 @@ footer a {
   border: 1px solid lightgrey;
 }
 
-.dark .downloadButton a:hover {
-  color: #030712;
-}
 .centerButton {
   text-align: center;
 }
@@ -720,7 +717,9 @@ footer a {
   justify-content: space-between;
   display: flex;
 }
-
+#changeThemeIcon2 {
+  cursor: pointer;
+}
 .spaceBetween li {
   align-items: center;
   display: flex;

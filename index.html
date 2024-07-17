@@ -32,7 +32,7 @@
             <li><a href="#project" target="_self">Projects </a></li>
             <li><a href="#contact" target="_self">Contact</a></li>
             <li class="divisor">|</li>
-            <li>  <span id="changeThemeIcon2" class="material-symbols-outlined themeIcon"> dark_mode </span> 
+            <li>  <span id="changeThemeIcon" class="material-symbols-outlined themeIcon"> dark_mode </span> 
             </li>
             <li>
               <strong
@@ -453,8 +453,8 @@
       >.
     </footer>
 
-    <section class="newMenu">
-      <ul class="newMenuLinks">
+    <section class="newMenu" id="newMenu">
+      <ul class="newMenuLinks" id="newMenuLinks">
         <div class="spaceBetween">
         <a href="/" target="_self"><span class="material-symbols-outlined home2" > home </span></a>
         <a><span class="material-symbols-outlined closeItem" onclick="closeNewMenu()"> close </span></a>
@@ -464,10 +464,10 @@
         <li><a href="#project" target="_self" onclick="closeNewMenu()">Projects </a></li>
         <li><a href="#contact" target="_self" onclick="closeNewMenu()">Contact</a></li>
         <hr>
-        <div class="spaceBetween"> Switch Theme
-        <li>  <span id="changeThemeIcon" class="material-symbols-outlined themeIcon2"> dark_mode </span> </li>
+        <div class="spaceBetween" id="changeThemeIcon2"> Switch Theme
+        <li>  <span  class="material-symbols-outlined themeIcon2"> dark_mode </span> </li>
         </div>
-        <li class="centerButton"> <button class="downloadButton"><a href="/cv-joice.pdf" target="_blank">Download CV</a></button></li>
+        <li class="centerButton"><a class="downloadButton" href="/cv-joice.pdf" target="_blank">Download CV</a></li>
       </ul>
     </section>
     <script src="script.js"></script>
