@@ -46,7 +46,6 @@ function changeTheme() {
     body.classList.add("dark");
     themeButton.innerHTML = "light_mode";
   }
-  closeNewMenu();
 }
 
 let themeButton = document.querySelector("#changeThemeIcon");
