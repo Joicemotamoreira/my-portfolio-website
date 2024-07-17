@@ -19,16 +19,21 @@
     <title>Joice | Web Developer</title>
   </head>
   <body>
-    <div class="wraper">
+    <header>
+    <div>
+      <div class="menuToggle">
+       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+       </div>
       <div class="menu">
-        <a href="/" target="_self"
-          ><span class="material-symbols-outlined" id="home"> home </span></a
-        >
+        <a href="/" target="_self"><span class="material-symbols-outlined" id="home"> home </span></a>
         <div>
           <ul class="menuLinks">
             <li><a href="#about" target="_self">About</a></li>
             <li><a href="#project" target="_self">Projects </a></li>
             <li><a href="#contact" target="_self">Contact</a></li>
+            <li class="divisor">|</li>
+            <li>  <span id="changeThemeIcon2" class="material-symbols-outlined themeIcon"> dark_mode </span> 
+            </li>
             <li>
               <strong
                 ><a href="/cv-joice.pdf" target="_blank">Download CV</a></strong
@@ -37,7 +42,8 @@
           </ul>
         </div>
       </div>
-
+    </header>
+    
       <section class="about" id="about">
         <div class="aboutDescription">
           <h1>Hi, I'm Joice <span class="waving">👋</span></h1>
@@ -84,8 +90,9 @@
               target="_blank"
             >
               <img src="images/icon-js.png" alt="" />
+              <p>JavaScript</p>
             </a>
-            <p>JavaScript</p>
+            
           </div>
           <div>
             <a
@@ -93,8 +100,9 @@
               target="_blank"
             >
               <img src="images/icon-html.png" alt="" />
+              <p>HTML</p>
             </a>
-            <p>HTML</p>
+            
           </div>
           <div>
             <a
@@ -102,20 +110,30 @@
               target="_blank"
             >
               <img src="images/icon-css.png" alt="" />
+              <p>CSS</p>
             </a>
-            <p>CSS</p>
+            
           </div>
           <div>
             <a href="https://code.visualstudio.com/" target="_blank">
               <img src="images/icon-vs.png" alt="" />
+              <p>VS Code</p>
             </a>
-            <p>VS Code</p>
+            
           </div>
           <div>
             <a href="https://github.com/" target="_blank">
               <img src="images/icon-github.png" alt="" />
+              <p>GitHub</p>
             </a>
-            <p>GitHub</p>
+            
+          </div>
+          <div>
+            <a href="https://git-scm.com/" target="_blank">
+              <img src="images/icon-git.png" alt="" />
+              <p>Git</p>
+            </a>
+            
           </div>
           <div>
             <a
@@ -123,8 +141,9 @@
               target="_blank"
             >
               <img src="images/icon-responsive.png" alt="" />
+              <p>Responsive Design</p>
             </a>
-            <p>Responsive Design</p>
+            
           </div>
           <div>
             <a
@@ -132,14 +151,16 @@
               target="_blank"
             >
               <img src="images/icon-AI.png" alt="" />
+              <p>AI</p>
             </a>
-            <p>AI</p>
+            
           </div>
           <div>
             <a href="https://en.wikipedia.org/wiki/API" target="_blank">
               <img src="images/icon-api.png" alt="" />
+              <p>API</p>
             </a>
-            <p>API</p>
+            
           </div>
           <div>
             <a
@@ -147,8 +168,9 @@
               target="_blank"
             >
               <img src="images/icon-hosting.png" alt="" />
+              <p>Hosting</p>
             </a>
-            <p>Hosting</p>
+            
           </div>
         </div>
       </section>
@@ -423,13 +445,31 @@
       </section>
     </div>
     <footer>
-      This project was coded with 🤍 by Joice Mota and is on
+      This project was coded with 💜 by Joice Mota and is on
       <a
         href="https://github.com/Joicemotamoreira/my-portfolio-website"
         target="_blank"
         >GitHub</a
       >.
     </footer>
+
+    <section class="newMenu">
+      <ul class="newMenuLinks">
+        <div class="spaceBetween">
+        <a href="/" target="_self"><span class="material-symbols-outlined home2" > home </span></a>
+        <a><span class="material-symbols-outlined closeItem" onclick="closeNewMenu()"> close </span></a>
+        </div>
+        <hr>
+        <li><a href="#about" target="_self" onclick="closeNewMenu()">About</a></li>
+        <li><a href="#project" target="_self" onclick="closeNewMenu()">Projects </a></li>
+        <li><a href="#contact" target="_self" onclick="closeNewMenu()">Contact</a></li>
+        <hr>
+        <div class="spaceBetween"> Switch Theme
+        <li>  <span id="changeThemeIcon" class="material-symbols-outlined themeIcon2"> dark_mode </span> </li>
+        </div>
+        <li class="centerButton"> <button class="downloadButton"><a href="/cv-joice.pdf" target="_blank">Download CV</a></button></li>
+      </ul>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,19 +1,12 @@
 body {
   font-family: "Poppins";
-  background-color: #c0c0f5;
+  background-color: white;
 }
 
 html {
   scroll-behavior: smooth;
 }
-.wraper {
-  max-width: 900px;
-  margin: auto;
-  padding: 0px 60px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 3px 3px 56px rgba(239, 239, 246, 0.5);
-}
+
 .poppins-light {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -32,7 +25,19 @@ html {
   font-style: normal;
 }
 
-ul {
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 999;
+}
+.dark header {
+  background-color: rgba(3, 7, 18, 0.5);
+}
+
+.menuLinks {
   list-style: none;
   display: flex;
   gap: 16px;
@@ -45,56 +50,95 @@ ul {
   text-decoration: none;
   transition: all 200ms ease-in-out;
 }
+
+.dark .menuLinks li a {
+  color: white;
+}
+
 .menuLinks li a:hover {
   color: black;
 }
+
+.dark .menuLinks li a:hover {
+  color: lightgrey;
+}
 .menu {
   display: flex;
-  position: sticky;
   top: 0;
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding: 10px;
-  color: blueviolet;
-  background-color: white;
+  color: #8a2be2;
   padding: 5px 35px;
-  border-bottom: 1px solid lightgray;
+  max-width: 1200px;
+  margin: auto;
 }
+
+.divisor {
+  color: #c1c1f580;
+}
+
 #home {
   transition: all 200ms ease-in-out;
   cursor: pointer;
   margin-top: 5px;
 }
+.dark #home {
+  color: white;
+}
 #home:hover {
   color: black;
 }
+.dark #home:hover {
+  color: lightgray;
+}
 
-.material-symbols-outlined {
+.themeIcon {
   color: #8a2be2;
 }
 
+.dark .themeIcon {
+  color: white;
+}
+
+.themeIcon:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.dark .themeIcon:hover {
+  color: lightgray;
+}
 .about {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  margin: 30px 5px;
+  margin: auto;
   padding: 15px;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 40px;
   color: rgb(94, 94, 94);
+  text-align: center;
+  max-width: 1200px;
+}
+.dark .about {
+  color: white;
 }
 .aboutDescription {
-  width: 550px;
-  text-align: justify;
+  width: 850px;
+  text-align: left;
+  flex: 1;
 }
+
 h1 {
   font-size: 55px;
   margin: 1px;
   color: #892be2c7;
 }
 
+.dark h1 {
+  color: white;
+}
 .waving {
   animation-name: wave-animation;
   animation-duration: 2.5s;
@@ -145,20 +189,30 @@ h1 {
 .picture {
   margin-right: 7px;
 }
+
 .picture img {
-  box-shadow: 26px 33px rgb(193, 193, 245, 0.5);
+  box-shadow: 26px 33px #c1c1f580;
   border: 10px solid white;
 }
-
+.dark .picture img {
+  border: 10px solid #030712;
+  box-shadow: 26px 33px #374151;
+}
 .skills {
-  border-bottom: 1px solid lightgray;
-  border-top: 1px solid lightgray;
   padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #c1c1f51f;
+}
+.dark .skills {
+  background-color: #111827;
 }
 .skills p {
   text-align: center;
   font-size: 18px;
   color: rgb(94, 94, 94);
+}
+.dark .skills p {
+  color: white;
 }
 .skillsTitle {
   background-color: rgb(193, 193, 245, 0.5);
@@ -170,29 +224,35 @@ h1 {
   max-width: 60px;
   padding: 2px 5px;
 }
-
+.dark .skillsTitle {
+  background-color: #030712;
+  color: white;
+}
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  max-width: 700px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 45px;
+  max-width: 1250px;
   text-align: center;
-  margin: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 60px auto;
 }
 
 .grid div {
   max-width: 100%;
 }
+
 .grid img {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   transition: all 300ms ease-in-out;
 }
 
 .grid img:hover {
   scale: 1.5;
+}
+
+.grid div a {
+  text-decoration: none;
 }
 
 .grid div p {
@@ -203,7 +263,11 @@ h1 {
 
 .projects {
   padding-top: 80px;
+  max-width: 900px;
+  justify-content: center;
+  margin: auto;
 }
+
 .projectsTitle {
   background-color: rgb(193, 193, 245, 0.5);
   border-radius: 20px;
@@ -215,14 +279,24 @@ h1 {
   padding: 2px 5px;
 }
 
+.dark .projectsTitle {
+  background-color: #374151;
+  color: white;
+}
 .projectsDescription {
   text-align: center;
   font-size: 18px;
   color: rgb(94, 94, 94);
+  padding-bottom: 15px;
 }
 
+.dark .projectsDescription {
+  color: #d1d5db;
+}
 .firstProject,
-.thirdProject {
+.thirdProject,
+.secondProject,
+.fourthProject {
   flex-direction: row;
   display: flex;
   border-radius: 10px;
@@ -230,37 +304,73 @@ h1 {
 }
 
 .firstProjectPicture,
-.thirdProjectPicture {
+.thirdProjectPicture,
+.secondProjectPicture,
+.fourthProjectPicture {
   text-align: center;
   background-color: rgba(193, 193, 245, 0.165);
   padding: 30px;
-  width: 50%;
+  width: 475px;
   align-items: center;
 }
+
+.dark .firstProjectPicture,
+.dark .thirdProjectPicture {
+  background-color: #374151;
+  border-radius: 10px 0 0 10px;
+}
+.dark .secondProjectPicture,
+.dark .fourthProjectPicture {
+  background-color: #374151;
+  border-radius: 0 10px 10px 0;
+}
 .firstProject img,
-.thirdProject img {
-  width: 350px;
+.thirdProject img,
+.secondProject img,
+.fourthProject img {
+  width: 480px;
   transition: all 300ms ease-in-out;
   border-radius: 10px;
 }
+
 .firstProjectDescription,
-.thirdProjectDescription {
+.thirdProjectDescription,
+.secondProjectDescription,
+.fourthProjectDescription {
   padding: 30px;
   width: 50%;
 }
 
+.dark .firstProjectDescription,
+.dark .thirdProjectDescription {
+  background-color: #1f2937;
+  border-radius: 0 10px 10px 0;
+}
+
+.dark .secondProjectDescription,
+.dark .fourthProjectDescription {
+  background-color: #1f2937;
+  border-radius: 10px 0 0 10px;
+}
 .firstProjectDescription p,
 .secondProjectDescription p,
 .thirdProjectDescription p,
 .fourthProjectDescription p {
   color: rgb(94, 94, 94);
-  font-size: 14px;
+  font-size: 18px;
 }
 
+.dark .firstProjectDescription p,
+.dark .secondProjectDescription p,
+.dark .thirdProjectDescription p,
+.dark .fourthProjectDescription p {
+  color: white;
+}
 .skillsWrapper {
   display: flex;
   flex-wrap: wrap;
 }
+
 .skillType {
   background-color: rgb(193, 193, 245, 0.5);
   padding: 0px 19px;
@@ -271,56 +381,23 @@ h1 {
   box-shadow: 4px 7px 17px rgba(0, 0, 0, 0.1);
 }
 
+.dark .skillType {
+  background-color: #374151;
+  color: #d1d5db;
+}
 .skillType P {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .firstProject img:hover,
-.thirdProject img:hover {
-  scale: 1.1;
-}
-
-.firstProjectTitle,
-.thirdProjectTitle {
-  font-size: 16px;
-  font-weight: bold;
-  color: rgb(17, 24, 39);
-  margin-top: 0;
-}
-
-.secondProject,
-.fourthProject {
-  flex-direction: row;
-  display: flex;
-  border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.secondProjectPicture,
-.fourthProjectPicture {
-  text-align: center;
-  background-color: rgba(193, 193, 245, 0.165);
-  padding: 30px;
-  width: 50%;
-  align-items: center;
-}
-.secondProject img,
-.fourthProject img {
-  width: 350px;
-  transition: all 300ms ease-in-out;
-  border-radius: 10px;
-}
-.secondProjectDescription,
-.fourthProjectDescription {
-  padding: 30px;
-  width: 50%;
-}
-
+.thirdProject img:hover,
 .secondProject img:hover,
 .fourthProject img:hover {
   scale: 1.1;
 }
 
+.firstProjectTitle,
+.thirdProjectTitle,
 .secondProjectTitle,
 .fourthProjectTitle {
   font-size: 16px;
@@ -330,9 +407,14 @@ h1 {
 }
 
 .getInTouch {
-  border-top: 1px solid lightgray;
   padding: 80px;
+  background-color: #c1c1f51f;
 }
+
+.dark .getInTouch {
+  background-color: #111726;
+}
+
 .getInTouchTitle {
   background-color: rgb(193, 193, 245, 0.5);
   border-radius: 20px;
@@ -344,17 +426,32 @@ h1 {
   padding: 2px 5px;
 }
 
+.dark .getInTouchTitle {
+  background-color: #374151;
+  color: white;
+}
+
 .getInTouch p {
   font-size: 18px;
   text-align: center;
   padding: 20px;
   color: rgb(94, 94, 94);
 }
+
+.dark .getInTouch p {
+  color: #d1d5db;
+}
+
 .contactDetails,
 .contactDetails input {
   text-align: center;
   font-size: 28px;
   color: rgb(68, 68, 68);
+}
+
+.dark .contactDetails,
+.dark .contactDetails input {
+  color: white;
 }
 
 .contactDetails input {
@@ -363,11 +460,13 @@ h1 {
   position: relative;
   left: -10px;
   top: -6px;
+  background-color: #c1c1f500;
 }
 
 input:focus {
   outline: none;
 }
+
 .emailInput {
   width: 358px !important;
 }
@@ -383,15 +482,24 @@ input:focus {
   position: relative;
   left: -18px;
   cursor: pointer;
+  transition: all 200ms ease-in-out;
 }
 
 .copyIcon:hover {
   color: gray;
 }
+
+.dark .copyIcon:hover {
+  color: lightgrey;
+}
 .moreContactDetails {
   text-align: center;
   color: rgb(94, 94, 94);
   font-size: 18px;
+}
+
+.dark .moreContactDetails {
+  color: #d1d5db;
 }
 #copyMessage {
   background-color: rgb(193, 193, 245, 0.5);
@@ -418,13 +526,26 @@ input:focus {
   top: -29px;
   right: -16px;
 }
+
+.dark #copiedNumber,
+.dark #copyMessage {
+  color: white;
+}
 .icons a {
   color: #892be2c7;
   text-decoration: none;
 }
 
+.dark .icons a {
+  color: white;
+}
+
 .icons a:hover {
   color: rgb(170, 170, 249);
+}
+
+.dark .icons a:hover {
+  color: lightgray;
 }
 .icons {
   display: flex;
@@ -435,10 +556,15 @@ input:focus {
   margin-top: 10px;
   font-size: 20px;
 }
+
+.dark .icons svg {
+  fill: white;
+}
 .github,
 .linkedin {
   margin-left: 4px;
 }
+
 footer {
   text-align: center;
   padding: 20px;
@@ -447,5 +573,247 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: black;
+  color: #892be2c7;
+}
+
+.dark footer,
+.dark footer a {
+  color: white;
+}
+.dark {
+  background-color: #030712;
+}
+
+.menuToggle {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #551a8b;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 999;
+}
+
+.dark .menu-toggle {
+  color: white;
+  background-color: #030712;
+}
+
+.dark .menu-toggle:hover {
+  color: lightgray;
+}
+
+.dark .home2,
+.dark .themeIcon2 {
+  color: #551a8b;
+}
+
+.themeIcon2:hover {
+  cursor: pointer;
+}
+.closeItem {
+  cursor: pointer;
+}
+.newMenu {
+  display: none;
+  background-color: white;
+  margin-right: 0px;
+  justify-content: flex-end;
+  color: #551a8b;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 5900px;
+  width: 100%;
+}
+
+.newMenuLinks {
+  list-style: none;
+  text-align: left;
+  width: 200px;
+  margin: 0px;
+  padding-right: 10px;
+  line-height: 50px;
+  background-color: white;
+  border-left: 1px solid rgba(211, 211, 211, 0.355);
+}
+
+.newMenuLinks a {
+  text-decoration: none;
+  color: #551a8b;
+}
+
+.downloadButton {
+  text-align: center;
+  padding: 5px 50px;
+  border-radius: 10px;
+  border: 1px solid #551a8b;
+  background-color: #551a8b;
+  width: 100%;
+}
+.downloadButton a {
+  color: white;
+  font-size: 14px;
+  font-family: Poppins;
+}
+
+.centerButton {
+  text-align: center;
+}
+.spaceBetween {
+  justify-content: space-between;
+  display: flex;
+}
+
+.spaceBetween li {
+  align-items: center;
+  display: flex;
+}
+hr {
+  border-color: rgba(211, 211, 211, 0.137);
+}
+
+@media screen and (max-width: 1371px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+    margin: 60px 120px;
+    row-gap: 40px;
+    column-gap: 0px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .picture {
+    order: -1;
+  }
+  .aboutDescription {
+    margin-top: 50px;
+    max-width: fit-content;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  .firstProject,
+  .thirdProject,
+  .secondProject,
+  .fourthProject {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 100px;
+  }
+  .firstProjectPicture,
+  .thirdProjectPicture,
+  .secondProjectPicture,
+  .fourthProjectPicture {
+    width: 100%;
+    order: -1;
+    padding: 30px 0px;
+  }
+  .firstProjectDescription,
+  .thirdProjectDescription,
+  .secondProjectDescription,
+  .fourthProjectDescription {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 60px;
+  }
+}
+
+@media screen and (max-width: 634px) {
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .menuLinks {
+    margin-left: 0px;
+  }
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 350px;
+  }
+  .firstProject,
+  .thirdProject,
+  .secondProject,
+  .fourthProject {
+    margin: 20px 50px;
+  }
+  .getInTouch {
+    padding: 80px 10px;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 350px;
+  }
+  .firstProject,
+  .thirdProject,
+  .secondProject,
+  .fourthProject {
+    margin: 20px 50px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .newMenu.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 555px) {
+}
+
+@media screen and (max-width: 480px) {
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 300px;
+  }
 }
