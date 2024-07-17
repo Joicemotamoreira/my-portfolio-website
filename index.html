@@ -21,18 +21,18 @@
   <body>
     <header>
     <div>
+      <div class="menuToggle">
        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+       </div>
       <div class="menu">
-        <a href="/" target="_self"
-          ><span class="material-symbols-outlined" id="home"> home </span></a
-        >
+        <a href="/" target="_self"><span class="material-symbols-outlined" id="home"> home </span></a>
         <div>
           <ul class="menuLinks">
             <li><a href="#about" target="_self">About</a></li>
             <li><a href="#project" target="_self">Projects </a></li>
             <li><a href="#contact" target="_self">Contact</a></li>
             <li class="divisor">|</li>
-            <li>  <span id="changeThemeIcon" class="material-symbols-outlined themeIcon"> dark_mode </span> 
+            <li>  <span id="changeThemeIcon2" class="material-symbols-outlined themeIcon"> dark_mode </span> 
             </li>
             <li>
               <strong
@@ -456,16 +456,16 @@
     <section class="newMenu">
       <ul class="newMenuLinks">
         <div class="spaceBetween">
-        <a href="/" target="_self"><span class="material-symbols-outlined" id="home"> home </span></a>
-        <a><span class="material-symbols-outlined"> close </span></a>
+        <a href="/" target="_self"><span class="material-symbols-outlined home2" > home </span></a>
+        <a><span class="material-symbols-outlined closeItem" onclick="closeNewMenu()"> close </span></a>
         </div>
         <hr>
-        <li><a href="#about" target="_self">About</a></li>
-        <li><a href="#project" target="_self">Projects </a></li>
-        <li><a href="#contact" target="_self">Contact</a></li>
+        <li><a href="#about" target="_self" onclick="closeNewMenu()">About</a></li>
+        <li><a href="#project" target="_self" onclick="closeNewMenu()">Projects </a></li>
+        <li><a href="#contact" target="_self" onclick="closeNewMenu()">Contact</a></li>
         <hr>
         <div class="spaceBetween"> Switch Theme
-        <li>  <span id="changeThemeIcon" class="material-symbols-outlined themeIcon"> dark_mode </span> </li>
+        <li>  <span id="changeThemeIcon" class="material-symbols-outlined themeIcon2"> dark_mode </span> </li>
         </div>
         <li class="centerButton"> <button class="downloadButton"><a href="/cv-joice.pdf" target="_blank">Download CV</a></button></li>
       </ul>

@@ -584,12 +584,43 @@ footer a {
   background-color: #030712;
 }
 
+.menuToggle {
+  display: flex;
+  justify-content: flex-end;
+}
 .menu-toggle {
   display: none;
   font-size: 24px;
-  color: red;
+  color: #551a8b;
   background: none;
   border: none;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 999;
+}
+
+.dark .menu-toggle {
+  color: white;
+  background-color: #030712;
+}
+
+.dark .menu-toggle:hover {
+  color: lightgray;
+}
+
+.dark .home2,
+.dark .themeIcon2 {
+  color: #551a8b;
+}
+
+.themeIcon2:hover {
+  cursor: pointer;
+}
+.closeItem {
   cursor: pointer;
 }
 .newMenu {
@@ -648,6 +679,10 @@ footer a {
   display: flex;
 }
 
+.spaceBetween li {
+  align-items: center;
+  display: flex;
+}
 hr {
   border-color: rgba(211, 211, 211, 0.137);
 }
