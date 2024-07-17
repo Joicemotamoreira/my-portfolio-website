@@ -631,7 +631,6 @@ footer a {
   color: #551a8b;
   position: absolute;
   top: 0px;
-  right: 0px;
   padding: 10px;
   z-index: 1000;
   backdrop-filter: blur(10px);
@@ -639,6 +638,17 @@ footer a {
   background-color: rgba(255, 255, 255, 0.5);
   height: 5900px;
   width: 100%;
+  right: 0px;
+}
+
+.dark .newMenu {
+  padding: 0px;
+  color: white;
+}
+.dark .newMenuLinks {
+  background-color: #030712;
+  color: white;
+  padding: 30px;
 }
 
 .newMenuLinks {
@@ -657,6 +667,22 @@ footer a {
   color: #551a8b;
 }
 
+.dark .newMenuLinks a {
+  color: white;
+}
+
+.dark .newMenuLinks a:hover {
+  color: lightgray;
+}
+.dark .themeIcon2,
+.dark .home2 {
+  color: white;
+}
+
+.dark .themeIcon2:hover,
+.dark .home2:hover {
+  color: lightgrey;
+}
 .downloadButton {
   text-align: center;
   padding: 5px 50px;
@@ -665,12 +691,28 @@ footer a {
   background-color: #551a8b;
   width: 100%;
 }
+
+.dark .downloadButton {
+  background-color: white;
+  border: 1px solid white;
+}
 .downloadButton a {
   color: white;
   font-size: 14px;
   font-family: Poppins;
 }
+.dark .downloadButton a {
+  color: #030712;
+}
 
+.dark .downloadButton:hover {
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+}
+
+.dark .downloadButton a:hover {
+  color: #030712;
+}
 .centerButton {
   text-align: center;
 }
@@ -683,6 +725,11 @@ footer a {
   align-items: center;
   display: flex;
 }
+
+.dark .spaceBetween:hover {
+  color: lightgrey;
+}
+
 hr {
   border-color: rgba(211, 211, 211, 0.137);
 }
@@ -806,14 +853,93 @@ hr {
   }
 }
 
-@media screen and (max-width: 555px) {
-}
-
 @media screen and (max-width: 480px) {
   .firstProject img,
   .thirdProject img,
   .secondProject img,
   .fourthProject img {
     width: 300px;
+  }
+
+  .emailInput {
+    width: 282px !important;
+  }
+
+  .contactDetails input {
+    font-size: 22px;
+    width: 180px;
+  }
+}
+@media screen and (max-width: 437px) {
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 270px;
+  }
+  .firstProject,
+  .thirdProject,
+  .secondProject,
+  .fourthProject {
+    margin: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 250px;
+  }
+  .firstProject,
+  .thirdProject,
+  .secondProject,
+  .fourthProject {
+    margin: 20px 15px;
+  }
+  .emailInput {
+    width: 232px !important;
+  }
+
+  .contactDetails input {
+    font-size: 18px;
+    width: 148px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .emailInput {
+    width: 200px !important;
+  }
+
+  .contactDetails input {
+    font-size: 16px;
+    width: 131px;
+  }
+  .emailIcon,
+  .phoneIcon,
+  .copyIcon {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 303px) {
+  .firstProject img,
+  .thirdProject img,
+  .secondProject img,
+  .fourthProject img {
+    width: 230px;
+  }
+  .emailInput {
+    width: 189px !important;
+  }
+
+  .contactDetails input {
+    font-size: 15px;
+    width: 121px;
+  }
+  .emailIcon,
+  .phoneIcon,
+  .copyIcon {
+    font-size: 20px;
   }
 }
