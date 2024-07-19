@@ -467,6 +467,17 @@ input:focus {
   outline: none;
 }
 
+.emailContainer,
+.phoneContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#myMail,
+#myNumber {
+  padding-right: 10px;
+  padding-left: 10px;
+}
 .emailInput {
   width: 358px !important;
 }
