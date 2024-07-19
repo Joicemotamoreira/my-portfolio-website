@@ -456,7 +456,6 @@ h1 {
 
 .contactDetails input {
   border: none;
-  width: 230px;
   position: relative;
   left: -10px;
   top: -6px;
@@ -479,9 +478,11 @@ input:focus {
   padding-left: 10px;
 }
 .emailInput {
-  width: 358px !important;
+  width: 358px;
 }
-
+.phoneInput {
+  width: 235px;
+}
 .emailIcon,
 .phoneIcon,
 .copyIcon {
@@ -872,12 +873,14 @@ hr {
   }
 
   .emailInput {
-    width: 282px !important;
+    width: 282px;
+  }
+  .phoneInput {
+    width: 190px;
   }
 
   .contactDetails input {
     font-size: 22px;
-    width: 180px;
   }
 }
 @media screen and (max-width: 437px) {
@@ -892,6 +895,10 @@ hr {
   .secondProject,
   .fourthProject {
     margin: 20px 20px;
+  }
+
+  .phoneInput {
+    width: 190px;
   }
 }
 
@@ -909,27 +916,25 @@ hr {
     margin: 20px 15px;
   }
   .emailInput {
-    width: 232px !important;
+    width: 232px;
+  }
+  .phoneInput {
+    width: 152px;
   }
 
   .contactDetails input {
     font-size: 18px;
-    width: 148px;
   }
 }
 @media screen and (max-width: 350px) {
   .emailInput {
-    width: 200px !important;
+    width: 200px;
   }
-
+  .phoneInput {
+    width: 135px;
+  }
   .contactDetails input {
     font-size: 16px;
-    width: 131px;
-  }
-  .emailIcon,
-  .phoneIcon,
-  .copyIcon {
-    font-size: 24px;
   }
 }
 @media screen and (max-width: 303px) {
@@ -940,12 +945,11 @@ hr {
     width: 230px;
   }
   .emailInput {
-    width: 189px !important;
+    width: 189px;
   }
 
   .contactDetails input {
     font-size: 15px;
-    width: 121px;
   }
   .emailIcon,
   .phoneIcon,
