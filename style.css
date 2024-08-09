@@ -247,7 +247,7 @@ h1 {
   transition: all 300ms ease-in-out;
 }
 
-.grid img:hover {
+.grid div:hover img {
   scale: 1.5;
 }
 
