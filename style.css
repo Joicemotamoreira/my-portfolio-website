@@ -289,9 +289,7 @@ h1 {
   color: #d1d5db;
 }
 .firstProject,
-.thirdProject,
-.secondProject,
-.fourthProject {
+.secondProject {
   flex-direction: row;
   display: flex;
   border-radius: 10px;
@@ -299,9 +297,7 @@ h1 {
 }
 
 .firstProjectPicture,
-.thirdProjectPicture,
-.secondProjectPicture,
-.fourthProjectPicture {
+.secondProjectPicture {
   text-align: center;
   background-color: rgba(193, 193, 245, 0.4);
   padding: 30px;
@@ -309,56 +305,44 @@ h1 {
   align-items: center;
 }
 
-.dark .firstProjectPicture,
-.dark .thirdProjectPicture {
+.dark .firstProjectPicture {
   background-color: #374151;
   border-radius: 10px 0 0 10px;
 }
-.dark .secondProjectPicture,
-.dark .fourthProjectPicture {
+.dark .secondProjectPicture {
   background-color: #374151;
   border-radius: 0 10px 10px 0;
 }
 .firstProject img,
-.thirdProject img,
-.secondProject img,
-.fourthProject img {
+.secondProject img {
   width: 480px;
   transition: all 300ms ease-in-out;
   border-radius: 10px;
 }
 
 .firstProjectDescription,
-.thirdProjectDescription,
-.secondProjectDescription,
-.fourthProjectDescription {
+.secondProjectDescription {
   padding: 30px;
   width: 50%;
 }
 
-.dark .firstProjectDescription,
-.dark .thirdProjectDescription {
+.dark .firstProjectDescription {
   background-color: #1f2937;
   border-radius: 0 10px 10px 0;
 }
 
-.dark .secondProjectDescription,
-.dark .fourthProjectDescription {
+.dark .secondProjectDescription {
   background-color: #1f2937;
   border-radius: 10px 0 0 10px;
 }
 .firstProjectDescription p,
-.secondProjectDescription p,
-.thirdProjectDescription p,
-.fourthProjectDescription p {
+.secondProjectDescription p {
   color: rgb(94, 94, 94);
   font-size: 18px;
 }
 
 .dark .firstProjectDescription p,
-.dark .secondProjectDescription p,
-.dark .thirdProjectDescription p,
-.dark .fourthProjectDescription p {
+.dark .secondProjectDescription p {
   color: white;
 }
 .skillsWrapper {
@@ -385,16 +369,12 @@ h1 {
 }
 
 .firstProject img:hover,
-.thirdProject img:hover,
-.secondProject img:hover,
-.fourthProject img:hover {
+.secondProject img:hover {
   scale: 1.1;
 }
 
 .firstProjectTitle,
-.thirdProjectTitle,
-.secondProjectTitle,
-.fourthProjectTitle {
+.secondProjectTitle {
   font-size: 16px;
   font-weight: bold;
   color: rgb(17, 24, 39);
@@ -764,34 +744,26 @@ hr {
     padding: 20px;
   }
   .firstProject,
-  .thirdProject,
-  .secondProject,
-  .fourthProject {
+  .secondProject {
     flex-direction: column;
     align-items: center;
     margin: 20px 100px;
   }
   .firstProjectPicture,
-  .thirdProjectPicture,
-  .secondProjectPicture,
-  .fourthProjectPicture {
+  .secondProjectPicture {
     width: 100%;
     order: -1;
     padding: 30px 0px;
   }
   .firstProjectDescription,
-  .thirdProjectDescription,
-  .secondProjectDescription,
-  .fourthProjectDescription {
+  .secondProjectDescription {
     width: 85%;
   }
 }
 
 @media screen and (max-width: 760px) {
   .firstProject img,
-  .thirdProject img,
-  .secondProject img,
-  .fourthProject img {
+  .secondProject img {
     width: 400px;
   }
 }
@@ -805,9 +777,7 @@ hr {
 
 @media screen and (max-width: 634px) {
   .firstProject img,
-  .thirdProject img,
-  .secondProject img,
-  .fourthProject img {
+  .secondProject img {
     width: 370px;
   }
 }
@@ -817,15 +787,11 @@ hr {
     margin-left: 0px;
   }
   .firstProject img,
-  .thirdProject img,
-  .secondProject img,
-  .fourthProject img {
+  .secondProject img {
     width: 350px;
   }
   .firstProject,
-  .thirdProject,
-  .secondProject,
-  .fourthProject {
+  .secondProject {
     margin: 20px 50px;
   }
   .getInTouch {
@@ -835,15 +801,11 @@ hr {
 
 @media screen and (max-width: 601px) {
   .firstProject img,
-  .thirdProject img,
-  .secondProject img,
-  .fourthProject img {
+  .secondProject img {
     width: 350px;
   }
   .firstProject,
-  .thirdProject,
-  .secondProject,
-  .fourthProject {
+  .secondProject {
     margin: 20px 50px;
   }
 
@@ -861,9 +823,7 @@ hr {
 
 @media screen and (max-width: 480px) {
   .firstProject img,
-  .thirdProject img,
-  .secondProject img,
-  .fourthProject img {
+  .secondProject img {
     width: 300px;
   }
 
@@ -880,15 +840,11 @@ hr {
 }
 @media screen and (max-width: 437px) {
   .firstProject img,
-  .thirdProject img,
-  .secondProject img,
-  .fourthProject img {
+  .secondProject img {
     width: 270px;
   }
   .firstProject,
-  .thirdProject,
-  .secondProject,
-  .fourthProject {
+  .secondProject {
     margin: 20px 20px;
   }
 
@@ -899,15 +855,11 @@ hr {
 
 @media screen and (max-width: 400px) {
   .firstProject img,
-  .thirdProject img,
-  .secondProject img,
-  .fourthProject img {
+  .secondProject img {
     width: 250px;
   }
   .firstProject,
-  .thirdProject,
-  .secondProject,
-  .fourthProject {
+  .secondProject {
     margin: 20px 15px;
   }
   .emailInput {
@@ -934,9 +886,7 @@ hr {
 }
 @media screen and (max-width: 303px) {
   .firstProject img,
-  .thirdProject img,
-  .secondProject img,
-  .fourthProject img {
+  .secondProject img {
     width: 230px;
   }
   .emailInput {
