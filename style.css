@@ -303,7 +303,7 @@ h1 {
 .secondProjectPicture,
 .fourthProjectPicture {
   text-align: center;
-  background-color: rgba(193, 193, 245, 0.165);
+  background-color: rgba(193, 193, 245, 0.4);
   padding: 30px;
   width: 475px;
   align-items: center;
